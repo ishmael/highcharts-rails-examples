@@ -26,8 +26,8 @@ class Highchart
       :enabled => false
     }
     @legend = {
-      :layout => 'vertical'
-=begin      ,:style => {
+=begin      :layout => 'vertical'
+      ,:style => {
          :left => 'auto', 
          :bottom => 'auto', 
          :right => '50px', 
@@ -55,8 +55,8 @@ class Highchart
     case options[:type].to_s
     when 'area'
       @chart = {
-        :defaultSeriesType => 'area',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'area'
+        #,:margin => [50, 200, 60, 80]
       }
     when 'areaspline'
       @chart = {

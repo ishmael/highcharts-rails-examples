@@ -657,3 +657,211 @@ Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:10:43) [GET
 Rendering template within layouts/application
 Rendering line_chart/basic
 Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#data_labels (for 127.0.0.1 at 2010-11-15 17:22:54) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:102: syntax error, unexpected tSYMBEG, expecting '}'
+				:formatter => tooltip_formatter
+				 ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:111: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:133: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#data_labels (for 127.0.0.1 at 2010-11-15 17:23:21) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:102: syntax error, unexpected tSYMBEG, expecting '}'
+				:formatter => tooltip_formatter
+				 ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:111: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:133: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#data_labels (for 127.0.0.1 at 2010-11-15 17:23:38) [GET]
+Rendering template within layouts/application
+Rendering line_chart/data_labels
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://localhost/line_chart/data_labels]
+
+
+Processing LineChartController#data_labels (for 127.0.0.1 at 2010-11-15 17:25:49) [GET]
+Rendering template within layouts/application
+Rendering line_chart/data_labels
+Completed in 127ms (View: 125, DB: 0) | 200 OK [http://localhost/line_chart/data_labels]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:43:21) [GET]
+
+NameError (undefined local variable or method `null' for #<LineChartController:0x000001020d36c8>):
+  app/controllers/line_chart_controller.rb:250:in `time_zoom'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (76.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:43:59) [GET]
+
+NameError (undefined local variable or method `null' for #<LineChartController:0x000001017074a8>):
+  app/controllers/line_chart_controller.rb:249:in `time_zoom'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:44:32) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 169ms (View: 167, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:44:41) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:45:21) [GET]
+
+NoMethodError (undefined method `UTC' for Date:Class):
+  app/controllers/line_chart_controller.rb:295:in `time_zoom'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:50:35) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 47ms (View: 44, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:51:18) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:51:55) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:52:31) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:52:47) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:53:50) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 45ms (View: 40, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:54:49) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:55:28) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:56:12) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:56:45) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 17:59:33) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:00:28) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:00:49) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:24:58) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 42ms (View: 32, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:26:47) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:26:58) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:27:32) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
+
+
+Processing LineChartController#time_zoom (for 127.0.0.1 at 2010-11-15 18:28:37) [GET]
+Rendering template within layouts/application
+Rendering line_chart/time_zoom
+Completed in 85ms (View: 65, DB: 0) | 200 OK [http://localhost/line_chart/time_zoom]
