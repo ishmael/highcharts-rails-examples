@@ -1,0 +1,659 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-15 15:35:45) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 15:43:53) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 202ms (View: 200, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:56:39) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +\': \'+ this.y +\'°C\';
+					                            ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (17.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:57:09) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +\': \'+ this.y +\'°C\';
+					                            ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:57:44) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C";
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:57:47) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C";
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:57:58) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C";      }'
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (94.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:58:08) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C";}'
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:58:17) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+				:renderTo => 'container',
+				                       ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:27: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:text => 'Monthly Average Temperature',
+				                 ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:31: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:text => 'Source: WorldClimate.com',
+				                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                    ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                           ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                  ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected tCONSTANT, expecting keyword_end
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                                       ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					    ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					           ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					                  ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					                         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					                                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					                                       ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: syntax error, unexpected tCONSTANT, expecting keyword_end
+					:text => 'Temperature (°C)'
+					                     ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:58:48) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C";}
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (99.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:58:57) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:20: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+					this.x +":"+ this.y +"°C"'
+					                        ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:59:08) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:18: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:17: syntax error, unexpected $end, expecting keyword_end
+...<br/>"+this.x +":"+ this.y +"°C";'
+...                               ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:59:36) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:24: syntax error, unexpected tINTEGER, expecting ']'
+				:margin =>  [0 0 25 130]
+				                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:28: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:28: syntax error, unexpected $end, expecting '}'
+					:text => 'Temperature (°C)'
+					                         ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 15:59:46) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:24: syntax error, unexpected tINTEGER, expecting ']'
+				:margin =>  [0 0 25 130]
+				                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:28: unterminated regexp meets end of file
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:28: syntax error, unexpected $end, expecting '}'):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 16:00:14) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:23: syntax error, unexpected tINTEGER, expecting ']'
+				:margin =>  [0 0 25 130]
+				                ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:27: unterminated regexp meets end of file
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:27: syntax error, unexpected $end, expecting '}'):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 16:00:23) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:27: unterminated regexp meets end of file
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:27: syntax error, unexpected $end, expecting '}'):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:12:21) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 138ms (View: 136, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:12:40) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:14:00) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:15:56) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 16:17:10) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:64: syntax error, unexpected '}', expecting ')'
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:88: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 16:17:12) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:64: syntax error, unexpected '}', expecting ')'
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:88: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:18:02) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:20:44) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:20:56) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:22:03) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:22:18) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:22:28) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:26:19) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 16:26:59) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting tASSOC
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                       ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting keyword_end
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                              ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting keyword_end
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                     ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting keyword_end
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                            ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting keyword_end
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                                   ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:34: syntax error, unexpected ',', expecting keyword_end
+				:categories => [{'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+				                                                          ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected ',', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					      ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected ',', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					             ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected ',', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					                    ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected ',', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					                           ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected ',', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					                                  ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:35: syntax error, unexpected '}', expecting keyword_end
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'}]
+					                                         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:46: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:49: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:57: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:63: syntax error, unexpected '}', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:87: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:27:47) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:35:15) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:36:50) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:37:33) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:37:36) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:38:37) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:39:11) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:39:14) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:46:59) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:47:14) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:47:26) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:47:40) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:47:47) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:48:46) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:50:01) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:50:25) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 108ms (View: 106, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:52:29) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 130ms (View: 128, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:55:42) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:59:19) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 16:59:38) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:00:04) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:01:34) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:02:20) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:03:24) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 17:05:13) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: syntax error, unexpected $end, expecting '}'
+					:text => 'Temperature (ºC)'
+					                         ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (149.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 17:05:52) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: syntax error, unexpected $end, expecting '}'
+					:text => 'Temperature (ºC)'
+					                         ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:05:57) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-15 17:08:09) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: invalid multibyte char (US-ASCII)
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:40: syntax error, unexpected $end, expecting '}'
+					:text => 'Temperature (°C)'
+					                         ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (129.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:08:36) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/line_chart/basic]
+
+
+Processing LineChartController#basic (for 127.0.0.1 at 2010-11-15 17:10:43) [GET]
+Rendering template within layouts/application
+Rendering line_chart/basic
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/line_chart/basic]

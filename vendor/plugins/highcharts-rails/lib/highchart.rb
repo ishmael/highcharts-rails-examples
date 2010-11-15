@@ -26,13 +26,14 @@ class Highchart
       :enabled => false
     }
     @legend = {
-      :layout => 'vertical', 
-      :style => {
+      :layout => 'vertical'
+=begin      ,:style => {
          :left => 'auto', 
          :bottom => 'auto', 
          :right => '50px', 
          :top => '75px'
       }
+=end    
     }
     
     # IE7 displays 'null' without this
@@ -91,7 +92,7 @@ class Highchart
     when 'line'
       @chart = {
         :defaultSeriesType => 'line',
-        :margin => [50, 200, 60, 80]
+       # :margin => [50, 200, 60, 80]
       }
     when 'pie'
       @chart = {
