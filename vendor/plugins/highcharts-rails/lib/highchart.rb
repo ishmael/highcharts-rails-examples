@@ -281,7 +281,7 @@ class Highchart
         "[" + string.map { |e| typed_print(e) } .join(", ") + "]"
       elsif string.is_a?(Date)
         "'#{string.strftime(@@date_format)}'"
-      elsif string.is_a?(String) && string != 'null' && string.index('function') == nil
+      elsif string.is_a?(String) && string != 'null' && string.index('function') == nil && string.match('Var') == nil
         "'" + string.gsub(/['"\\\x0]/,'\\\\\0') + "'"
       else
         string

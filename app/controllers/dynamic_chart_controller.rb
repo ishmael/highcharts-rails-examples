@@ -255,7 +255,7 @@ class DynamicChartController < ApplicationController
       :chart => {
 				:renderTo => 'master-container',
 				:borderWidth => 0,
-				:backgroundColor => '',
+				:backgroundColor => 'null',
 				:zoomType => 'x',
 				:marginTop => 0,
 				:marginBottom => 20,
@@ -305,7 +305,7 @@ class DynamicChartController < ApplicationController
 				}"
 			},
 			:title => {
-				:text => ''
+				:text => 'null'
 			},
 			:x_axis => {
 				:type => 'datetime',
@@ -320,7 +320,7 @@ class DynamicChartController < ApplicationController
 					color: 'rgba(0, 0, 0, 0.2)'
 				}],
 				:title => {
-					:text => ''
+					:text => 'null'
 				}
 			},
 			:y_axis => {
@@ -329,7 +329,7 @@ class DynamicChartController < ApplicationController
 					:enabled => false
 				},
 				:title => {
-					:text => ''
+					:text => 'null'
 				},
 				:min => 0.6,
 				:showFirstLabel => false
@@ -382,7 +382,7 @@ class DynamicChartController < ApplicationController
 		  :format =>'options'
       })
     
-		@detail = Highchart.scatter({
+		@detail = Highchart.line({
       :chart => {
 				:marginBottom => 120,
 				:renderTo => 'detail-container',
@@ -403,7 +403,7 @@ class DynamicChartController < ApplicationController
 				:type => 'datetime'
 			},
 			:y_axis => {
-				:title => '',
+				:title => 'null',
 				:maxZoom => 0.1
 			},
 			:tooltip => {
@@ -431,18 +431,16 @@ class DynamicChartController < ApplicationController
 			},
 			:series => [{
 				:name => 'USD to EUR',
-				:pointStart => detailStart,
+				:pointStart => 'detailStartVar',
 				:pointInterval => 24 * 3600 * 1000,
-				:data => detailData
+				:data => 'detailDataVar'
 			}],
 			
 			exporting: {
 				enabled: false
-			}
-	
-		});,
-		  :format =>'options'
-      })    
+			}  ,
+    		  :format =>'options'
+          })  
   end
 
 end

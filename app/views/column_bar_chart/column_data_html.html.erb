@@ -78,7 +78,7 @@
 </script>		
 <% content_for :javascript do %>
 	var table = document.getElementById('datatable');
-    <%= @chart %>
+    var options = {<%= @chart %>}
 	Highcharts.visualize(table, options);
 	
 <% end %>

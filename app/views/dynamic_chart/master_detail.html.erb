@@ -23,15 +23,15 @@
 				masterChart = new Highcharts.Chart({<%= @master %>});
 				
 				// prepare the detail chart
-				var detailData = [],
-					detailStart = Date.UTC(2008, 7, 1);
+				var detailDataVar = [],
+					detailStartVar = Date.UTC(2008, 7, 1);
 
 				jQuery.each(masterChart.series[0].data, function(i, point) {
-					if (point.x >= detailStart) {
-						detailData.push(point.y);
+					if (point.x >= detailStartVar) {
+						detailDataVar.push(point.y);
 					}
 				});
 				
-				detailChart = new Highcharts.Chart({<%= @master %>});
+				detailChart = new Highcharts.Chart({<%= @detail %>});
 			});
 </script>
