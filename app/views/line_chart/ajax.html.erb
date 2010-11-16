@@ -4,7 +4,7 @@
 <% content_for :javascript do %>
 
 	var chart;
-    <%= @chart%>
+    var options  = {<%= @chart%>};
 
 	jQuery.getJSON('/tokyo.json', null, function(data) {
 		options.series.push({

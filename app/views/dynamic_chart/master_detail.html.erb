@@ -1,2 +1,37 @@
-<h1>DynamicChart#master_detail</h1>
-<p>Find me in app/views/dynamic_chart/master_detail.html.erb</p>
+<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+
+<script type="text/javascript">
+
+		var masterChart,
+			detailChart;
+			
+			$(document).ready(function() {
+					
+				// make the container smaller and add a second container for the master chart
+				var $container = $('#container')
+					.css('position', 'relative');
+				
+				var $detailContainer = $('<div id="detail-container">')
+					.appendTo($container);
+				
+				var $masterContainer = $('<div id="master-container">')
+					.css({ position: 'absolute', top: 300, height: 80, width: 800 })
+					.appendTo($container);
+					
+				
+				// create the master chart
+				masterChart = new Highcharts.Chart({<%= @master %>});
+				
+				// prepare the detail chart
+				var detailData = [],
+					detailStart = Date.UTC(2008, 7, 1);
+
+				jQuery.each(masterChart.series[0].data, function(i, point) {
+					if (point.x >= detailStart) {
+						detailData.push(point.y);
+					}
+				});
+				
+				detailChart = new Highcharts.Chart({<%= @master %>});
+			});
+</script>

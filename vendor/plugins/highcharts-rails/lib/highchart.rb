@@ -94,48 +94,8 @@ class Highchart
   end
   
   def jquery
-    query_params = instance_variables.sort.map do |var|
-      case var.to_s
-        
-      when '@chart'
-        set_chart
-      when '@colors'
-        set_colors if @colors.is_a?(Array)
-      when '@credits'
-        set_credits
-      when '@labels'
-        set_labels
-      when '@lang'
-        set_lang
-      when '@legend'
-        set_legend
-      when '@plotOptions'
-        set_plotOptions
-      when '@point'
-        set_point
-      when '@series'
-        set_series
-      when '@subtitle'
-        set_subtitle
-      when '@symbols'
-        set_symbols
-      when '@title'
-        set_title
-      when '@toolbar'
-        set_toolbar
-      when '@tooltip'
-        set_tooltip
-      when '@x_axis'
-        set_x_axis
-      when '@y_axis'
-        set_y_axis
-      when '@exporting'
-        set_exporting
-      end
-    end.compact
-
     "var chart = new Highcharts.Chart({ 
-      #{query_params.join(",\n")} 
+      #{options} 
     });"
   end
 
@@ -180,9 +140,9 @@ class Highchart
       end
     end.compact
 
-    "var options = { 
-      #{query_params.join(",\n")} 
-    };"
+
+      "#{query_params.join(",\n")}" 
+  
   end
   private
     def set_chart
