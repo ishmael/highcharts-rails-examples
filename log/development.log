@@ -1619,3 +1619,9 @@ Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:53:1
 Rendering template within layouts/application
 Rendering line_chart/spline_plots
 Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:54:05) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
