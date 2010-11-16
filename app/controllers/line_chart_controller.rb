@@ -63,7 +63,66 @@ class LineChartController < ApplicationController
   end
 
   def ajax
-    
+    chart_data = [{
+				name: 'Tokyo',
+				data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+			}, {
+				name: 'London',
+				data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+		}]
+		
+		tooltip_formatter = '
+      function() {return "<b>"+ this.series.name +"</b><br/>"+this.x +": "+ this.y +"\u00B0C";}'
+      
+    @chart = Highchart.spline({
+      :chart => {
+				:renderTo => "container"		
+			},
+			:title => {
+				:text => "Monthly Average Temperature in Tokyo"
+			},
+			:subtitle => {
+				:text => 'Source: WorldClimate.com'
+			},
+			:x_axis => {
+				:categories => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+					'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+			},
+			:y_axis => {
+				:title => {
+					:text => "Temperature (\u00B0C)"
+				}
+			},
+			:legend => {
+			  :enabled => false
+			},
+			:tooltip => {
+				:formatter => tooltip_formatter
+			},
+			:plotOptions => {
+				:spline => {
+				  :cursor => 'pointer',
+					:point => {
+						:events => {
+							:click => "function() {
+								hs.htmlExpand(null, {
+									pageOrigin: {
+										x: this.pageX, 
+										y: this.pageY
+									},
+									headingText: this.series.name,
+									maincontentText: 'this.category: '+ this.category +
+										'<br/>this.y: '+ this.y,
+									width: 200
+								});
+							}"
+						}
+					}
+				}
+			},
+			:series => [],
+			:format =>'options'
+  } )
   end
 
   def data_labels

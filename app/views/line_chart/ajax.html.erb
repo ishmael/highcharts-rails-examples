@@ -3,7 +3,16 @@
 
 <% content_for :javascript do %>
 
+	var chart;
+    <%= @chart%>
 
-    <%= @chart %>
+	jQuery.getJSON('/tokyo.json', null, function(data) {
+		options.series.push({
+			name: 'Tokyo',
+			data: data
+		});
+		
+		chart = new Highcharts.Chart(options);
+	});
 <% end %>
 
