@@ -386,6 +386,28 @@ class ColumnBarChartController < ApplicationController
   end
 
   def column_data_html
+     @chart = Highchart.column({
+          :chart => {
+      			:renderTo => 'container',
+      		},
+      		:title => {
+					      :text => 'Data extracted from a HTML table in the page'
+					},
+					:x_axis => {
+					},
+					:y_axis => {
+					    :title => {
+					       :text => 'Units'
+					     }
+					},
+					:tooltip => {
+					  :formatter => "function() {
+					         return '<b>'+ this.series.name +'</b><br/>'+
+					            this.y +' '+ this.x.toLowerCase();
+					      }"
+					},
+      		:format =>'options'
+      		})
   end
 
 end
