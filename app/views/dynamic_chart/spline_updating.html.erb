@@ -1,2 +1,5 @@
-<h1>DynamicChart#spline_updating</h1>
-<p>Find me in app/views/dynamic_chart/spline_updating.html.erb</p>
+<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+
+<% content_for :javascript do %>
+    <%= @chart %>
+<% end %>

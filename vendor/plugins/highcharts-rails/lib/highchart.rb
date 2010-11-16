@@ -5,7 +5,7 @@ class Highchart
   @@date_format = "<strong>%A</strong><br /> %m/%d/%Y"
   
 	attr_accessor :chart, :colors, :credits, :labels, :lang, :legend, :plotOptions, :point,
-	              :series, :subtitle, :symbols, :title, :toolbar, :tooltip, :x_axis, :y_axis
+	              :series, :subtitle, :symbols, :title, :toolbar, :tooltip, :x_axis, :y_axis,:exporting
 
   def self.method_missing(m, options={})
     format = options[:format] || 'jquery'
@@ -129,6 +129,8 @@ class Highchart
         set_x_axis
       when '@y_axis'
         set_y_axis
+      when '@exporting'
+        set_exporting
       end
     end.compact
 
@@ -173,6 +175,8 @@ class Highchart
         set_x_axis
       when '@y_axis'
         set_y_axis
+      when '@exporting'
+        set_exporting
       end
     end.compact
 
@@ -287,6 +291,12 @@ class Highchart
       }"
     end
     
+    def set_exporting
+      "exporting: {
+      #{concatenate_attributes(@exporting)}
+			}"
+    end
+    
     # generic method that accepts a hash and concatenates its key/value pairs
     def concatenate_attributes(attr)
       attrs = Array.new
@@ -311,7 +321,7 @@ class Highchart
         "[" + string.map { |e| typed_print(e) } .join(", ") + "]"
       elsif string.is_a?(Date)
         "'#{string.strftime(@@date_format)}'"
-      elsif string.is_a?(String) && string != 'null' && string.strip[0..7] != 'function'
+      elsif string.is_a?(String) && string != 'null' && string.index('function') == nil
         "'" + string.gsub(/['"\\\x0]/,'\\\\\0') + "'"
       else
         string

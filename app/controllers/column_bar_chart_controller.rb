@@ -179,7 +179,7 @@ class ColumnBarChartController < ApplicationController
   def column_negative
      @chart = Highchart.column({
         :chart => {
-    			:renderTo => 'container',
+    			:renderTo => 'container'
     		},
     		:title => {
 					:text => 'Column chart with negative values'
