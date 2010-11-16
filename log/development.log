@@ -1446,3 +1446,44 @@ Processing LineChartController#ajax (for 127.0.0.1 at 2010-11-16 11:04:39) [GET]
 Rendering template within layouts/application
 Rendering line_chart/ajax
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/ajax]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 11:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/examples/spline-inverted.htm" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#spline_inverted (for 127.0.0.1 at 2010-11-16 11:16:37) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:413: syntax error, unexpected tSYMBEG, expecting '}'
+			:tooltip => {
+			 ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:415: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:422: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:438: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#spline_inverted (for 127.0.0.1 at 2010-11-16 11:16:48) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_inverted
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/line_chart/spline_inverted]
+
+
+Processing LineChartController#spline_inverted (for 127.0.0.1 at 2010-11-16 11:17:33) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_inverted
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_inverted]
