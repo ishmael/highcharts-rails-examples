@@ -355,6 +355,62 @@ class AreaChartController < ApplicationController
   end
 
   def area_spline
+    @chart = Highchart.areaspline({
+       :chart => {
+					:renderTo => 'container'
+				},
+				:title => {
+					:text => 'Average fruit consumption during one week'
+				},
+				:legend => {
+					:layout => 'vertical',
+					:align => 'left',
+					:verticalAlign => 'top',
+					:x => 150,
+					:y => 100,
+					:borderWidth => 1,
+					:backgroundColor => '#FFFFFF'
+				},
+				:x_axis => {
+					:categories => [
+						'Monday', 
+						'Tuesday', 
+						'Wednesday', 
+						'Thursday', 
+						'Friday', 
+						'Saturday', 
+						'Sunday'
+					],
+					:plotBands => [{ 
+						:from => 4.5,
+						:to => 6.5,
+						:color => 'rgba(68, 170, 213, .2)'
+					}]
+				},
+				:y_axis => {
+					:title => {
+						:text => 'Fruit units'
+					}
+				},
+				:tooltip => {
+					:formatter => "function() {
+			                return ''+
+							this.x +': '+ this.y +' units';
+					}"
+				},
+				:plotOptions => {
+					:areaspline => {
+						:fillOpacity => 0.5
+					}
+				},
+				:series => [{
+					name: 'John',
+					data: [3, 4, 3, 5, 4, 10, 12]
+				}, {
+					name: 'Jane',
+					data: [1, 3, 4, 3, 3, 5, 4]
+				}]
+  		})
   end
 
 end

@@ -25,17 +25,7 @@ class Highchart
     @credits = {
       :enabled => false
     }
-    @legend = {
-=begin      :layout => 'vertical'
-      ,:style => {
-         :left => 'auto', 
-         :bottom => 'auto', 
-         :right => '50px', 
-         :top => '75px'
-      }
-=end    
-    }
-    
+  
     # IE7 displays 'null' without this
     @title = {
       :text => ""
@@ -56,56 +46,27 @@ class Highchart
     when 'area'
       @chart = {
         :defaultSeriesType => 'area'
-        #,:margin => [50, 200, 60, 80]
       }
     when 'areaspline'
       @chart = {
-        :defaultSeriesType => 'areaspline',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'areaspline'
       }
     when 'bar'
       @chart = {
         :inverted => true, 
         :defaultSeriesType => 'bar', 
-        :margin => [50, 50, 50, 100]
-      }
-      @plotOptions = {
-        :bar => {
-          :showInLegend => false,
-          :dataLabels => {
-            :y => -5,
-            :enabled => true, 
-            :color => '#666666'
-          }
-        }
       }
     when 'column'
       @chart = {
-        :defaultSeriesType => 'column', 
-        :margin => [50, 50, 50, 100]
-      }
-      @plotOptions = {
-        :column => {
-          :showInLegend => false
-        }
+        :defaultSeriesType => 'column'
       }
     when 'line'
       @chart = {
-        :defaultSeriesType => 'line',
-       # :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'line'
       }
     when 'pie'
       @chart = {
-        :margin => [10, 10, 10, 10]
-      }
-      @plotOptions = {
-        :pie => {
-          :dataLabels => {
-            :enabled => true, 
-            :color => 'white', 
-            :style => {:font => '10pt Helvetica'}
-          }
-        }
+        :defaultSeriesType => 'pie'
       }
     when 'scatter'
       @chart = {
@@ -114,7 +75,6 @@ class Highchart
     when 'spline'
       @chart = {
         :defaultSeriesType => 'spline'
-        #,:margin => [50, 200, 60, 80]
       }
     end
     
