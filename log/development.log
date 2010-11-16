@@ -1625,3 +1625,151 @@ Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:54:0
 Rendering template within layouts/application
 Rendering line_chart/spline_plots
 Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:54:18) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_symbols (for 127.0.0.1 at 2010-11-16 12:05:59) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_symbols
+Completed in 49ms (View: 47, DB: 0) | 200 OK [http://localhost/line_chart/spline_symbols]
+
+
+Processing LineChartController#spline_symbols (for 127.0.0.1 at 2010-11-16 12:06:34) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_symbols
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/line_chart/spline_symbols]
+
+
+Processing ApplicationController#scatter_plots (for 127.0.0.1 at 2010-11-16 12:19:08) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:785: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:804: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (80.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#scatter_plots (for 127.0.0.1 at 2010-11-16 12:22:04) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:785: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:804: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#scatter_plots (for 127.0.0.1 at 2010-11-16 12:23:40) [GET]
+
+ActionController::UnknownAction (No action responded to scatter_plots. Actions: ajax, basic, data_labels, scatter_plot, spline_inverted, spline_plots, spline_symbols, and time_zoom):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LineChartController#scatter_plots (for 127.0.0.1 at 2010-11-16 12:23:47) [GET]
+
+ActionController::UnknownAction (No action responded to scatter_plots. Actions: ajax, basic, data_labels, scatter_plot, spline_inverted, spline_plots, spline_symbols, and time_zoom):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:24:04) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:785: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:804: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (91.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:24:26) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:785: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:804: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:24:40) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:676: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:695: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:24:56) [GET]
+Rendering template within layouts/application
+Rendering line_chart/scatter_plot
+Completed in 160ms (View: 152, DB: 0) | 200 OK [http://localhost/line_chart/scatter_plot]
+
+
+Processing ApplicationController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:25:33) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:785: syntax error, unexpected '{', expecting tASSOC
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:796: syntax error, unexpected '}', expecting keyword_end
+  					},
+  					 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:26:31) [GET]
+Rendering template within layouts/application
+Rendering line_chart/scatter_plot
+Completed in 52ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/scatter_plot]

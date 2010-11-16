@@ -109,21 +109,7 @@ class Highchart
       }
     when 'scatter'
       @chart = {
-        :defaultSeriesType => 'scatter',
-        :margin => [50, 200, 60, 80]
-      }
-      @plotOptions = {
-        :scatter => {
-          :marker => {
-            :radius => 5,
-            :states => {
-              :hover => {
-                :enabled => true,
-                :lineColor => '#666666'
-              }
-            }
-          }
-        }
+        :defaultSeriesType => 'scatter'
       }
     when 'spline'
       @chart = {
