@@ -177,6 +177,38 @@ class ColumnBarChartController < ApplicationController
   end
 
   def column_negative
+     @chart = Highchart.column({
+        :chart => {
+    			:renderTo => 'container',
+    		},
+    		:title => {
+					:text => 'Column chart with negative values'
+				},
+				:x_axis => {
+					:categories => ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+				},
+				:y_axis => {
+    			:title => {
+    				:text => 'Y-values'
+    			}
+  			},
+				:tooltip => {
+					:formatter => "function() {
+						return ''+
+							 this.series.name +': '+ this.y +'';
+					}"
+				},
+				:series => [{
+					name: 'John',
+					data: [5, 3, 4, 7, 2]
+				}, {
+					name: 'Jane',
+					data: [2, -2, -3, 2, 1]
+				}, {
+					name: 'Joe',
+					data: [3, 4, 4, -2, 5]
+				}]
+    		})
   end
 
   def stack_column
