@@ -1773,3 +1773,41 @@ Processing LineChartController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:26:3
 Rendering template within layouts/application
 Rendering line_chart/scatter_plot
 Completed in 52ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/scatter_plot]
+
+
+Processing LineChartController#scatter_plot (for 127.0.0.1 at 2010-11-16 12:27:11) [GET]
+Rendering template within layouts/application
+Rendering line_chart/scatter_plot
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/scatter_plot]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 14:26:01) [GET]
+
+ActionController::RoutingError (No route matches "/area_chart/basic" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#basic (for 127.0.0.1 at 2010-11-16 14:28:00) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/area_chart_controller.rb:22: syntax error, unexpected tIDENTIFIER, expecting '}'
+		tooltip_formatter = '
+		                 ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (80.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AreaChartController#basic (for 127.0.0.1 at 2010-11-16 14:30:16) [GET]
+Rendering template within layouts/application
+Rendering area_chart/basic
+Completed in 131ms (View: 129, DB: 0) | 200 OK [http://localhost/area_chart/basic]

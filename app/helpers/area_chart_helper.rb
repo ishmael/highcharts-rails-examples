@@ -1,0 +1,2 @@
+module AreaChartHelper
+end
