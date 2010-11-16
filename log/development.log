@@ -1487,3 +1487,135 @@ Processing LineChartController#spline_inverted (for 127.0.0.1 at 2010-11-16 11:1
 Rendering template within layouts/application
 Rendering line_chart/spline_inverted
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_inverted]
+
+
+Processing ApplicationController#spline_plots (for 127.0.0.1 at 2010-11-16 11:29:02) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:556: syntax error, unexpected ',', expecting ')'
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:563: syntax error, unexpected '}', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:569: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#spline_plots (for 127.0.0.1 at 2010-11-16 11:30:22) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:556: syntax error, unexpected ',', expecting ')'
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:563: syntax error, unexpected '}', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:569: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#spline_plots (for 127.0.0.1 at 2010-11-16 11:31:05) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:541: syntax error, unexpected '=', expecting tASSOC
+				:series =  [{
+				         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:555: syntax error, unexpected ',', expecting keyword_end
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:561: syntax error, unexpected '}', expecting keyword_end
+        })
+         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:567: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#spline_plots (for 127.0.0.1 at 2010-11-16 11:31:33) [GET]
+
+SyntaxError (/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:563: syntax error, unexpected '}', expecting ')'
+        })
+         ^
+/Volumes/SnowData/programming/rails/highcharts-rails-test/app/controllers/line_chart_controller.rb:569: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:31:57) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 56ms (View: 52, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:32:11) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:32:26) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:32:27) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:32:36) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:33:00) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:34:02) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:34:16) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:51:16) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:52:54) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
+
+
+Processing LineChartController#spline_plots (for 127.0.0.1 at 2010-11-16 11:53:15) [GET]
+Rendering template within layouts/application
+Rendering line_chart/spline_plots
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/line_chart/spline_plots]
