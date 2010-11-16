@@ -212,6 +212,57 @@ class ColumnBarChartController < ApplicationController
   end
 
   def stack_column
+    @chart = Highchart.column({
+        :chart => {
+    			:renderTo => 'container',
+    		},
+    		:title => {
+					:text => 'Stacked column chart'
+				},
+				:x_axis => {
+					:categories => ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+				},
+				:y_axis => {
+					:min => 0,
+					:title => {
+						:text => 'Total fruit consumption'
+					}
+				},
+				:legend => {
+					:style => {
+						:left => 'auto',
+						:bottom => 'auto',
+						:right => '70px',
+						:top => '35px'
+					},
+					:backgroundColor => '#FFFFFF',
+					:borderColor => '#CCC',
+					:borderWidth => 1,
+					:shadow => false
+				},
+				:tooltip => {
+					:formatter => "function() {
+						return '<b>'+ this.x +'</b><br/>'+
+							 this.series.name +': '+ this.y +'<br/>'+
+							 'Total: '+ this.point.stackTotal;
+					}"
+				},
+				:plotOptions => {
+					:column => {
+						:stacking => 'normal'
+					}
+				},
+			  :series => [{
+					name: 'John',
+					data: [5, 3, 4, 7, 2]
+				}, {
+					name: 'Jane',
+					data: [2, 2, 3, 2, 1]
+				}, {
+					name: 'Joe',
+					data: [3, 4, 4, 2, 5]
+				}]
+    		})
   end
 
   def stack_perc_column
