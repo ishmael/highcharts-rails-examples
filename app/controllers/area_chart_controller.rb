@@ -23,7 +23,7 @@ class AreaChartController < ApplicationController
       
     @chart = Highchart.area({
       :chart => {
-				:renderTo => 'container', 
+				:renderTo => 'container'
 			},
 			:title => {
 				:text => 'US and USSR nuclear stockpiles'
@@ -72,7 +72,7 @@ class AreaChartController < ApplicationController
   def area_negative
     @chart = Highchart.area({
       :chart => {
-				:renderTo => 'container',
+				:renderTo => 'container'
 			},
 			:title => {
 				:text => 'Area chart with negative values'
@@ -107,7 +107,7 @@ class AreaChartController < ApplicationController
   def stacked_area
    @chart = Highchart.area({
     :chart => {
-			:renderTo => 'container',
+			:renderTo => 'container'
 		},
 		:title => {
 			:text => 'Historic and Estimated Worldwide Population Growth by Region'
@@ -171,7 +171,7 @@ class AreaChartController < ApplicationController
   def percentage_area
      @chart = Highchart.area({
       :chart => {
-  			:renderTo => 'container',
+  			:renderTo => 'container'
   		},
   		:title => {
   			:text => 'Historic and Estimated Worldwide Population Distribution by Region'
