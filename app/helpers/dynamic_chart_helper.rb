@@ -1,0 +1,2 @@
+module DynamicChartHelper
+end
