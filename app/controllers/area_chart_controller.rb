@@ -229,6 +229,62 @@ class AreaChartController < ApplicationController
   end
 
   def area_missing_points
+     @chart = Highchart.area({
+       :chart => {
+					:renderTo => 'container',
+					:defaultSeriesType => 'area',
+					:marginBottom => 60
+				},
+				:title => {
+					:text => 'Fruit consumption *'
+				},
+				:subtitle => {
+					:text => '* Jane\'s banana consumption is unknown',
+					:align => 'right',
+					:x => -10,
+					:y => 400
+				},
+				:legend => {
+					:layout => 'vertical',
+					:align => 'left',
+					:verticalAlign => 'top',
+					:x => 150,
+					:y => 100,
+					:borderWidth => 1,
+					:backgroundColor => '#FFFFFF'
+				},
+				:x_axis => {
+					:categories => ['Apples', 'Pears', 'Oranges', 'Bananas', 'Grapes', 'Plums', 'Strawberries', 'Raspberries']
+				},
+				:y_axis => {
+					:title => {
+						:text => 'Y-Axis'
+					},
+					:labels => {
+						:formatter => "function() {
+							return this.value;
+						}"
+					}
+				},
+				:tooltip => {
+					:formatter => "function() {
+			                return ''+
+							this.x +': '+ this.y;
+					}"
+				},
+				:plotOptions => {
+					:area => {
+						:fillOpacity => 0.5
+					}
+				},
+				:series => [{
+					name: 'John',
+					data: [0, 1, 4, 4, 5, 2, 3, 7]
+				}, {
+					name: 'Jane',
+					data: [1, 0, 3, 'null', 3, 1, 2, 1]
+				}]
+  		})
   end
 
   def inverted_axes
