@@ -1,2 +1,6 @@
-<h1>AreaChart#area_negative</h1>
-<p>Find me in app/views/area_chart/area_negative.html.erb</p>
+<!-- container to hold the pie chart -->
+<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+
+<% content_for :javascript do %>
+    <%= @chart %>
+<% end %>
