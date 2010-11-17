@@ -169,8 +169,6 @@ class LineChartController < ApplicationController
 				}
 			},
 			:series => chart_data
-			  
-
   })
   end
 

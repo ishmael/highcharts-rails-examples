@@ -1,7 +1,7 @@
 require "highchart/hash"
 
 class Highchart
-  @@types = ['area', 'areaspline', 'bar', 'column', 'line', 'pie', 'scatter', 'spline']
+  @@types = ['area', 'areaspline', 'bar', 'column', 'line', 'pie', 'scatter', 'spline','combo']
   @@date_format = "<strong>%A</strong><br /> %m/%d/%Y"
   
 	attr_accessor :chart, :colors, :credits, :labels, :lang, :legend, :plotOptions, :point,
@@ -75,6 +75,10 @@ class Highchart
     when 'spline'
       @chart = {
         :defaultSeriesType => 'spline'
+      }
+    when 'combo'
+      @chart = {
+
       }
     end
     
