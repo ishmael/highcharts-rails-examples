@@ -144,10 +144,10 @@ class Highchart
       end
     end.compact
 
-
-      "#{query_params.join(",\n")}" 
+    "#{query_params.join(",\n")}" 
   
   end
+
   private
     def set_chart
       "chart: {
@@ -215,6 +215,7 @@ class Highchart
 			]"
     end
     
+
     def set_subtitle
       "subtitle: {
         #{concatenate_attributes(@subtitle)}
@@ -244,15 +245,27 @@ class Highchart
     end
     
     def set_x_axis   
+      if @x_axis.is_a?(Hash)
       "xAxis: {  
         #{concatenate_attributes(@x_axis)}
       }"
+      elsif @x_axis.is_a?(Array) 
+        "xAxis: [  
+          #{concatenate_attributes(@x_axis)}
+        ]"
+      end
     end
     
-    def set_y_axis   
-      "yAxis: {  
-        #{concatenate_attributes(@y_axis)}
-      }"
+    def set_y_axis  
+      if @x_axis.is_a?(Hash)
+          "yAxis: {  
+            #{concatenate_attributes(@y_axis)}
+          }"
+      elsif @x_axis.is_a?(Array) 
+          "yAxis: [  
+            #{concatenate_attributes(@y_axis)}
+          ]"
+      end 
     end
     
     def set_exporting
@@ -263,16 +276,29 @@ class Highchart
     
     # generic method that accepts a hash and concatenates its key/value pairs
     def concatenate_attributes(attr)
-      attrs = Array.new
-      attr.each do |key, value|
-        if value.is_a?(Hash)
-          attrs << "#{key}: {#{concatenate_attributes(value)}}"
-        else
-          attrs << "#{key}: #{typed_print(value)}"
-        end
-      end
+      if attr.is_a?(Hash)
+          attrs = Array.new
+          attr.each do |key, value|
+            if value.is_a?(Hash)
+              attrs << "#{key}: {#{concatenate_attributes(value)}}"
+            else          
+              attrs << "#{key}: #{typed_print(value)}"
+            end
+          end
       
-      attrs.join(",\n") + "\n"
+          attrs.join(",\n") + "\n"
+      elsif attr.is_a?(Array)
+        attrs = Array.new
+          attr.each do |series_hash|
+            ser = Array.new
+            series_hash.each do |key, value|
+                ser << "#{key}: #{typed_print(value)}"
+            end
+
+            attrs << "{#{ser.join(",\n")}}";
+          end
+          attrs.join(",\n") + "\n"
+      end
     end
     
     # method determines if value needs to be surrounded in single quotes
@@ -280,7 +306,7 @@ class Highchart
       if string.is_a?(Hash)
         values = Array.new
         string.each { |key, value| values << "#{key}: #{typed_print(value)}"}
-        "{" + values.join(", ") + "}"
+        "{ " + values.join(", ") + "}"
       elsif string.is_a?(Array)
         "[" + string.map { |e| typed_print(e) } .join(", ") + "]"
       elsif string.is_a?(Date)
