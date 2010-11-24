@@ -4,13 +4,13 @@ Highcharts-rails is a simple helper for displaying Highcharts graphs in your Rai
 
 Highcharts-rails accepts a combination of hashes and arrays that formatted in a way that Highcharts expects and allows developers to calculate chart data and format chart data/labels/tooltips in the controller and/or model instead of the view.
 
-This plugin is packaged with [Highcharts 1.1.3](http://highcharts.com/download), and [jQuery 1.3.2](http://docs.jquery.com/Release:jQuery_1.3.2).
+This plugin is packaged with [Highcharts 2.1.0](http://highcharts.com/download), and [jQuery 1.4.3].
 
 ## Installation
 
 Get the plugin:
 
-	script/plugin install git://github.com/loudpixel/highcharts-rails.git
+	script/plugin install git://github.com/ishmael/highcharts-rails.git
 	
 Run the rake setup:
 
@@ -20,10 +20,7 @@ Run the rake setup:
 
 Include the following in the head of your application layout:
 
-	<%= javascript_include_tag 'jquery-1.3.2.min', 'highcharts' %>
-	<!--[if IE]>
-		<%= javascript_include_tag 'excanvas.compiled' %>
-	<![endif]-->
+		<%= javascript_include_tag 'jquery-1.4.3.min', 'highcharts','modules/exporting' %>	
 
 Some people like to put their javascript at the bottom of the page, regardless of your preference you should include the following to write your javascript, unless you feel it necessary to include your javascript in each view.
 
@@ -113,3 +110,11 @@ In your views you can use a content block to provide the above your javascript a
 	<% content_for :javascript do %>
 		<%= @pie_chart %>
 	<% end %>
+
+To see more examples go to: https://github.com/ishmael/highcharts-rails-examples
+
+You can now have combo charts, which means no single chart is defined as default.
+
+You can assign javascript variables to data, as long as those variables end in "Var"
+
+The X and Y axis can have arrays of attributes.

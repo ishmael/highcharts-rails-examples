@@ -232,7 +232,7 @@ class AreaChartController < ApplicationController
      @chart = Highchart.area({
        :chart => {
 					:renderTo => 'container',
-					:marginBottom => 60
+					:spacingBottom => 60
 				},
 				:title => {
 					:text => 'Fruit consumption *'
@@ -240,7 +240,8 @@ class AreaChartController < ApplicationController
 				:subtitle => {
 					:text => '* Jane\'s banana consumption is unknown',
 					:align => 'right',
-					:x => -10,
+					:floating => true,
+					:verticalAlign => 'bottom',
 					:y => 400
 				},
 				:legend => {
@@ -249,6 +250,7 @@ class AreaChartController < ApplicationController
 					:verticalAlign => 'top',
 					:x => 150,
 					:y => 100,
+					:floating => true,
 					:borderWidth => 1,
 					:backgroundColor => '#FFFFFF'
 				},
@@ -267,7 +269,7 @@ class AreaChartController < ApplicationController
 				},
 				:tooltip => {
 					:formatter => "function() {
-			                return ''+
+			                return '<b>'+ this.series.name + '</b><br/>' +
 							this.x +': '+ this.y;
 					}"
 				},

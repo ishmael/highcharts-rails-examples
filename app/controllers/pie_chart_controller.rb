@@ -3,7 +3,6 @@ class PieChartController < ApplicationController
     @chart = Highchart.pie({
         :chart => {
     			:renderTo => 'container',
-    		  :margin => [50, 200, 60, 170]
 				},
 				:title => {
 					:text => 'Browser market shares at a specific website, 2010'
@@ -27,20 +26,9 @@ class PieChartController < ApplicationController
 							:formatter => "function() {
 								if (this.y > 5) return this.point.name;
 							}",
-							:color => 'white',
-							:style => {
-								:font => '13px Trebuchet MS, Verdana, sans-serif'
-							}
+							:color => '#000000',
+							:connectorColor => '#000000'
 						}
-					}
-				},
-				:legend => {
-					:layout => 'vertical',
-					:style => {
-						:left => 'auto',
-						:bottom => 'auto',
-						:right => '50px',
-						:top => '100px'
 					}
 				},
 			    :series => [{
@@ -104,7 +92,10 @@ class PieChartController < ApplicationController
 						{ name: 'Safari', y: 2.7, color: '#80699B' },
 						{ name: 'Opera', y: 2.3, color: '#3D96AE' },
 						{ name: 'Mozilla', y: 0.4, color: '#DB843D' }
-					]
+					],
+					dataLabels: {
+					  enabled: false
+					}
 				}, {
 					type: 'pie',
 					name: '2010',
@@ -119,13 +110,8 @@ class PieChartController < ApplicationController
 					],
 					dataLabels: {
 						enabled: true,
-						formatter: "function() {
-							if (this.y > 5) return this.point.name;
-						}",
-						color: 'white',
-						style: {
-							font: '13px Trebuchet MS, Verdana, sans-serif'
-						}
+						color: '#000000',
+            connectColor: '#000000'
 					}
 				}]
     		})

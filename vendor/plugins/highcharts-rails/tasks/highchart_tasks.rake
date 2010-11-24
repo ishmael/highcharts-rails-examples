@@ -1,6 +1,6 @@
 namespace :highcharts_rails do
-  to_copy = ["jquery-1.4.3.min.js", "modules/exporting.js", "highcharts.js"]
-  to_create = ["modules"]
+  to_copy = ["jquery-1.4.3.min.js", "modules/exporting.js", "highcharts.js","adapters/mootools-adapter.js","themes/dark-blue.js","themes/dark-green.js","themes/gray.js","themes/grid.js"]
+  to_create = ["modules","adapters","themes"]
   
   # install
   desc 'Copies required scripts files to the public/javascripts directory.'
@@ -16,9 +16,11 @@ namespace :highcharts_rails do
     	destination = File.join(RAILS_ROOT, "/public/javascripts/", directory)
     	  	
     	# create
-    	unless FileUtils.mkdir(destination)
-    	  success = false
-  	  end
+    	unless File.exist?(destination)
+      	unless FileUtils.mkdir(destination)
+      	  success = false
+    	  end
+    	end
     end
 
 
