@@ -1,8 +1,8 @@
 class DynamicChartController < ApplicationController
   def spline_updating
     chart_data = [{
-			name: 'Random data',
-			data: "(function() {
+			:name  => 'Random data',
+			:data => "(function() {
 				// generate an array of random data
 				var data = [],
 					time = (new Date()).getTime(),
@@ -132,7 +132,7 @@ class DynamicChartController < ApplicationController
 				}
 			},
 			:series => [{
-				data: [[20, 20], [80, 80]]
+				:data => [[20, 20], [80, 80]]
 			}]
   })
   end
@@ -314,10 +314,10 @@ class DynamicChartController < ApplicationController
 				:minPadding => 0.01,
 				:maxPadding => 0.01,
 				:plotBands => [{
-					id: 'mask-before',
-					from: Date.parse('2006/01/01').strftime('%s').to_i * 1000,
-					to: Date.parse('2008/08/01').strftime('%s').to_i * 1000,
-					color: 'rgba(0, 0, 0, 0.2)'
+					:id => 'mask-before',
+					:from => Date.parse('2006/01/01').strftime('%s').to_i * 1000,
+					:to => Date.parse('2008/08/01').strftime('%s').to_i * 1000,
+					:color => 'rgba(0, 0, 0, 0.2)'
 				}],
 				:title => {
 					:text => 'null'
@@ -435,12 +435,11 @@ class DynamicChartController < ApplicationController
 				:pointInterval => 24 * 3600 * 1000,
 				:data => 'detailDataVar'
 			}],
-			
-			exporting: {
-				enabled: false
-			}  ,
-    		  :format =>'options'
-          })  
+			:exporting => {
+				:enabled => false
+			},
+    	:format =>'options'
+    })  
   end
 
 end

@@ -1,8 +1,8 @@
 class AreaChartController < ApplicationController
   def basic
     chart_data =  [{
-			name: 'USA',
-			data: ['null', 'null', 'null', 'null', 'null', 6 , 11, 32, 110, 235, 369, 640, 
+			:name  => 'USA',
+			:data  => ['null', 'null', 'null', 'null', 'null', 6 , 11, 32, 110, 235, 369, 640, 
 				1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126, 
 				27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662, 
 				26956, 27912, 28999, 28965, 27826, 25579, 25722, 24826, 24605, 
@@ -10,8 +10,8 @@ class AreaChartController < ApplicationController
 				22380, 21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950, 
 				10871, 10824, 10577, 10527, 10475, 10421, 10358, 10295, 10104 ]
 		}, {
-			name: 'USSR/Russia',
-			data: ['null', 'null', 'null', 'null', 'null', 'null', 'null' , 'null' , 'null' ,'null', 
+			:name  => 'USSR/Russia',
+			:data  => ['null', 'null', 'null', 'null', 'null', 'null', 'null' , 'null' , 'null' ,'null', 
 			5, 25, 50, 120, 150, 200, 426, 660, 869, 1060, 1605, 2471, 3322, 
 			4238, 5221, 6129, 7089, 8339, 9399, 10538, 11643, 13092, 14478, 
 			15915, 17385, 19055, 21205, 23044, 25393, 27935, 30062, 32049, 
@@ -42,6 +42,13 @@ class AreaChartController < ApplicationController
 					}"
 				}
 			},
+			:x_axis => {
+               :labels => {
+                  :formatter => "function() {
+                     return this.value; // clean, unformatted number for year
+                  }"
+               }                     
+            },
 			:tooltip => {
 				:formatter => "function() {
 					return this.series.name +' produced <b>'+
@@ -92,14 +99,14 @@ class AreaChartController < ApplicationController
 				}"
 			},
 			:series => [{
-				name: 'John',
-				data: [5, 3, 4, 7, 2]
+				:name  => 'John',
+				:data  => [5, 3, 4, 7, 2]
 			}, {
-				name: 'Jane',
-				data: [2, -2, -3, 2, 1]
+				:name  => 'Jane',
+				:data  => [2, -2, -3, 2, 1]
 			}, {
-				name: 'Joe',
-				data: [3, 4, 4, -2, 5]
+				:name  => 'Joe',
+				:data  => [3, 4, 4, -2, 5]
 			}]
   })
   end
@@ -150,20 +157,20 @@ class AreaChartController < ApplicationController
 			}
 		},
 		:series => [{
-			name: 'Asia',
-			data: [502, 635, 809, 947, 1402, 3634, 5268]
+			:name  => 'Asia',
+			:data  => [502, 635, 809, 947, 1402, 3634, 5268]
 		}, {
-			name: 'Africa',
-			data: [106, 107, 111, 133, 221, 767, 1766]
+			:name  => 'Africa',
+			:data  => [106, 107, 111, 133, 221, 767, 1766]
 		}, {
-			name: 'Europe',
-			data: [163, 203, 276, 408, 547, 729, 628]
+			:name  => 'Europe',
+			:data  => [163, 203, 276, 408, 547, 729, 628]
 		}, {
-			name: 'America',
-			data: [18, 31, 54, 156, 339, 818, 1201]
+			:name  => 'America',
+			:data  => [18, 31, 54, 156, 339, 818, 1201]
 		}, {
-			name: 'Oceania',
-			data: [2, 2, 2, 6, 13, 30, 46]
+			:name  => 'Oceania',
+			:data  => [2, 2, 2, 6, 13, 30, 46]
 		}]
 		})
   end
@@ -210,20 +217,20 @@ class AreaChartController < ApplicationController
   			}
   		},
   		:series => [{
-  			name: 'Asia',
-  			data: [502, 635, 809, 947, 1402, 3634, 5268]
+  			:name  => 'Asia',
+  			:data  => [502, 635, 809, 947, 1402, 3634, 5268]
   		}, {
-  			name: 'Africa',
-  			data: [106, 107, 111, 133, 221, 767, 1766]
+  			:name  => 'Africa',
+  			:data  => [106, 107, 111, 133, 221, 767, 1766]
   		}, {
-  			name: 'Europe',
-  			data: [163, 203, 276, 408, 547, 729, 628]
+  			:name  => 'Europe',
+  			:data  => [163, 203, 276, 408, 547, 729, 628]
   		}, {
-  			name: 'America',
-  			data: [18, 31, 54, 156, 339, 818, 1201]
+  			:name  => 'America',
+  			:data  => [18, 31, 54, 156, 339, 818, 1201]
   		}, {
-  			name: 'Oceania',
-  			data: [2, 2, 2, 6, 13, 30, 46]
+  			:name  => 'Oceania',
+  			:data  => [2, 2, 2, 6, 13, 30, 46]
   		}]
   		})
   end
@@ -242,7 +249,7 @@ class AreaChartController < ApplicationController
 					:align => 'right',
 					:floating => true,
 					:verticalAlign => 'bottom',
-					:y => 400
+					:y => 15
 				},
 				:legend => {
 					:layout => 'vertical',
@@ -279,11 +286,11 @@ class AreaChartController < ApplicationController
 					}
 				},
 				:series => [{
-					name: 'John',
-					data: [0, 1, 4, 4, 5, 2, 3, 7]
+					:name  => 'John',
+					:data  => [0, 1, 4, 4, 5, 2, 3, 7]
 				}, {
-					name: 'Jane',
-					data: [1, 0, 3, 'null', 3, 1, 2, 1]
+					:name  => 'Jane',
+					:data  => [1, 0, 3, 'null', 3, 1, 2, 1]
 				}]
   		})
   end
@@ -347,11 +354,11 @@ class AreaChartController < ApplicationController
 					}
 				},
 				:series => [{
-					name: 'John',
-					data: [3, 4, 3, 5, 4, 10, 12]
+					:name  => 'John',
+					:data  => [3, 4, 3, 5, 4, 10, 12]
 				}, {
-					name: 'Jane',
-					data: [1, 3, 4, 3, 3, 5, 4]
+					:name  => 'Jane',
+					:data  => [1, 3, 4, 3, 3, 5, 4]
 				}]
   		})
   end
@@ -406,11 +413,11 @@ class AreaChartController < ApplicationController
 					}
 				},
 				:series => [{
-					name: 'John',
-					data: [3, 4, 3, 5, 4, 10, 12]
+					:name  => 'John',
+					:data  => [3, 4, 3, 5, 4, 10, 12]
 				}, {
-					name: 'Jane',
-					data: [1, 3, 4, 3, 3, 5, 4]
+					:name  => 'Jane',
+					:data  => [1, 3, 4, 3, 3, 5, 4]
 				}]
   		})
   end
